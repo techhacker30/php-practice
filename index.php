@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -23,4 +22,3 @@
 
     echo "<input type='text' value='Hello $name'>"
 ?>
->>>>>>> d328081 (Php problem was solved)
