@@ -12,15 +12,17 @@
     <div class="mainbox">
         <header>TO-DO APPLICATION</header>
         <div class="list-container">
-            <ol>
+            <ol class="list">
                 <li>FIRST TASK</li>
                 <li>SECOND TASK</li>
                 <li>THIRD TASK</li>
                 <li>FOURTH TASK</li>
             </ol>
+            
             <div class="button-container">
                 <button type="reset">Reset</button>
-                <button type="submit">ADD TASK</button>
+                <input type="text" id="addtask" placeholder="Here Enter Your Task">
+                <button type="submit" onclick="addtask()">ADD TASK</button>
             </div>
         </div>
     </div>
