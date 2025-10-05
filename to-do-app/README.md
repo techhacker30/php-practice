@@ -72,5 +72,6 @@ Follow these steps to set up and run the project locally:
 
 git clone https://github.com/techhacker30/php-practice.git
 
+cd php-practice/
 
 
