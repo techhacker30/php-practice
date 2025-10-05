@@ -1,7 +1,7 @@
 <?php
 //  import database 
 include("database.php");
-
+// $tasks = get_tasks();
 if($_SERVER["REQUEST_METHOD"]=="POST"){
     if(isset($_POST["add"])){
         $task = $_POST['task'];
@@ -16,12 +16,15 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
             remove_task($_POST['remove']);
         }
     }
-    if(isset($_POST["complite"])){
-        // echo "complite";
-        if($_POST['complite']){
-            task_status($_POST['complite']);
-        }
+    if(isset($_POST['complite'])){
+        // echo $_POST['complite'];
+        // echo "request going for hdp";
+        // if($_POST['complite']){
+            $res = task_status();
+            echo $res;
+        // }
+        echo "come back";
     }
-    header("Location: index.html");
+    // header("Location: index.php");
 }
 ?>
